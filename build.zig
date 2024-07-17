@@ -18,14 +18,7 @@ pub fn build(b: *std.Build) void {
     exe.root_module.addIncludePath(dep.path(""));
     exe.addIncludePath(b.path("include/"));
 
-    exe.addCSourceFiles(.{ 
-        .files = &source_files,
-        .flags = &.{
-            "-std=c++20",
-            "-Wall", 
-            "-Wextra" 
-        }
-    });
+    exe.addCSourceFiles(.{ .files = &source_files, .flags = &.{ "-std=c++20", "-Wall", "-Wextra" } });
 
     // first str = zon name, second str = name in addStaticLib
     b.installArtifact(exe);
