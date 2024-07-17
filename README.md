@@ -2,6 +2,8 @@
 
 Game of Life as a [rawterm](https://github.com/ttibsi/rawterm) terminal UI application
 
+![](https://github.com/user-attachments/assets/a42d161f-19d8-4a62-80e2-d9c3ca53acdf)
+
 ### To Use
 
 Run `zig build` to compile and `./zig-out/bin/gol-tui` to run. This has only
